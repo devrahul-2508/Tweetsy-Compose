@@ -41,7 +41,7 @@ fun CategoryScreen(onClick:(category:String)-> Unit) {
 
         }
     else
-    LazyVerticalGrid(columns = GridCells.Fixed(2), contentPadding = PaddingValues(8.dp)){
+        LazyVerticalGrid(columns = GridCells.Fixed(2), contentPadding = PaddingValues(8.dp)){
         items(categories.value.distinct()){
             CategoryItem(category = it,onClick)
         }
